@@ -51,7 +51,7 @@ export function Navbar() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="group relative font-mono text-xs tracking-wider text-muted-foreground hover:text-foreground transition-colors duration-300"
+                  className="group relative font-mono text-[16px] tracking-wider text-muted-foreground hover:text-foreground transition-colors duration-300"
                 >
                   <span className="text-accent mr-1">My</span>
                   {link.label.toUpperCase()}
