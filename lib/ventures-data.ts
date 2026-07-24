@@ -38,6 +38,7 @@ export const ventures: Venture[] = [
     end: "Present",
     status: "Present",
     logo: "/assets/histeeria.png",
+
     logoInitials: "H",
     logoColor: "#7c3aed",
     summary:
@@ -63,7 +64,8 @@ export const ventures: Venture[] = [
     start: "2026",
     end: "Present",
     status: "Active",
-    logo: "/assets/anya2.jpeg",
+    logo: "/assets/anya2.webp",
+
     logoInitials: "A",
     logoColor: "#ec4899",
     summary:
@@ -139,7 +141,7 @@ export const ventures: Venture[] = [
     start: "2025",
     end: "2025",
     status: "Completed",
-    logo: "/assets/VistaAI.png",
+    logo: "/assets/VistaAI.webp",
     logoInitials: "V",
     logoColor: "#22c55e",
     summary:
@@ -186,7 +188,7 @@ export const ventures: Venture[] = [
     start: "Jan 2025",
     end: "Present",
     status: "Present",
-    logo: "/assets/Upvista.png",
+    logo: "/assets/Upvista.webp",
     logoInitials: "U",
     logoColor: "#3b82f6",
     summary:

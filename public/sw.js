@@ -1,10 +1,10 @@
-const CACHE = "hmza-hb-v1"
+const CACHE = "hmza-hb-v2"
 const PRECACHE = [
   "/",
   "/manifest.webmanifest",
   "/icons/icon-192.png",
   "/icons/icon-512.png",
-  "/og-image.png",
+  "/og-image.webp",
   "/llms.txt",
 ]
 

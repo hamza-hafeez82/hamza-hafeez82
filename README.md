@@ -57,7 +57,7 @@ I build production AI systems end-to-end; architecture, code, shipping, and the 
   <tr>
     <td align="center" width="50%" valign="top">
       <br/>
-      <img src="public/assets/anya2.jpeg" width="72" style="border-radius:16px" alt="Anya" />
+      <img src="public/assets/anya2.webp" width="72" style="border-radius:16px" alt="Anya" />
       <h3><a href="https://github.com/hmza-hb/Anya">Anya</a></h3>
       <p><b>Architect & Creator</b></p>
       <p>
@@ -70,7 +70,7 @@ I build production AI systems end-to-end; architecture, code, shipping, and the 
     </td>
     <td align="center" width="50%" valign="top">
       <br/>
-      <img src="public/assets/Upvista.png" width="88" alt="Upvista Digital" />
+      <img src="public/assets/Upvista.webp" width="88" alt="Upvista Digital" />
       <h3><a href="https://www.upvistadigital.com">Upvista Digital</a></h3>
       <p><b>Founder / Engineer</b></p>
       <p>
@@ -85,7 +85,7 @@ I build production AI systems end-to-end; architecture, code, shipping, and the 
   <tr>
     <td align="center" width="50%" valign="top">
       <br/>
-      <img src="public/assets/VistaAI.png" width="72" alt="Vista AI" />
+      <img src="public/assets/VistaAI.webp" width="72" alt="Vista AI" />
       <h3>Vista AI</h3>
       <p><b>Builder</b></p>
       <p>

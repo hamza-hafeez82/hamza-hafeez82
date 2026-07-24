@@ -75,7 +75,8 @@ export function personJsonLd() {
     name: siteConfig.fullName,
     alternateName: [siteConfig.name, "hmza-hb", "Hamza Hafeez Bhatti"],
     url: siteConfig.url,
-    image: absoluteUrl("/assets/images/10.jpeg"),
+    image: absoluteUrl("/assets/images/10.webp"),
+
     email: siteConfig.email,
     jobTitle: "Software and AI Systems Engineer",
     description: siteConfig.description,

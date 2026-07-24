@@ -7,7 +7,8 @@ export const siteConfig = {
     "Official website of Hamza Hafeez (Hamza Hafeez Bhatti): software and AI systems engineer, founder of Histeeria, Cortex EDR, and Upvista Digital. Biography, ventures, research, writings, and resume from Lahore, Pakistan.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://hamza-hafeez.site",
   locale: "en_US",
-  ogImage: "/og-image.png",
+  ogImage: "/og-image.webp",
+
   twitterHandle: "@Upvista_Digital",
   email: "hmza.hb82@gmail.com",
   sameAs: [

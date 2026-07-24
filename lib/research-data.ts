@@ -26,7 +26,8 @@ export const researchProfile = {
   location: "Lahore, Pakistan",
   email: "hello@hamza-hafeez.site",
   homepage: "https://github.com/hmza-hb",
-  photo: "/assets/images/11.jpeg",
+  photo: "/assets/images/11.webp",
+
   interests: [
     "Artificial General Intelligence",
     "Cognitive Architecture",

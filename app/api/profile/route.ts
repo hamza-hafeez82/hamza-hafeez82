@@ -23,7 +23,8 @@ export async function GET() {
       website: siteConfig.url,
       sameAs: siteConfig.sameAs,
       summary: resumeProfile.summary,
-      image: absoluteUrl("/assets/images/10.jpeg"),
+      image: absoluteUrl("/assets/images/10.webp"),
+
     },
     pages: {
       home: absoluteUrl("/"),
