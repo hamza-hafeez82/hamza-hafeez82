@@ -7,9 +7,9 @@ export interface BioImage {
 /** One medium side portrait per chapter (floats beside the prose). */
 export const chapterSideImages: Record<number, BioImage> = {
   1: {
-    src: "/assets/images/14.webp",
-    alt: "Family portrait with my mother, my sister, and me as a child",
-    caption: "The family I was born into.",
+    src: "/assets/images/.webp",
+    alt: "",
+    caption: "",
   },
   2: {
     src: "/assets/images/26.webp",
@@ -22,22 +22,22 @@ export const chapterSideImages: Record<number, BioImage> = {
     caption: "Stars on faces. Curiosity in the mind.",
   },
   4: {
-    src: "/assets/images/20.webp",
+    src: "/assets/images/21.webp",
     alt: "My hand-drawn car design for MITO SHIBA COMPANY, 2018",
     caption: "Design No. 1. A remote control car.",
   },
   5: {
-    src: "/assets/images/32.webp",
+    src: "/assets/images/34.webp",
     alt: "My formal school uniform portrait",
     caption: "Failing in one place, winning in every other.",
   },
   6: {
-    src: "/assets/images/27.webp",
-    alt: "Me speaking at the Government College University Lahore podium",
-    caption: "Presenting at SUPARCO.",
+    src: "/assets/images/1.webp",
+    alt: "",
+    caption: "",
   },
   7: {
-    src: "/assets/images/2.webp",
+    src: "/assets/images/32.webp",
     alt: "Portrait of me with biology and English textbooks behind me",
     caption: "I wanted computers. They wanted a doctor.",
   },
@@ -52,7 +52,7 @@ export const chapterSideImages: Record<number, BioImage> = {
     caption: "Never stop looking for the truth.",
   },
   10: {
-    src: "/assets/images/1.webp",
+    src: "/assets/images/.webp",
     alt: "Portrait from a hard season of my life",
     caption: "I was the only hope for my family.",
   },
@@ -62,7 +62,7 @@ export const chapterSideImages: Record<number, BioImage> = {
     caption: "A used ThinkPad, and stubbornness.",
   },
   12: {
-    src: "/assets/images/5.webp",
+    src: "/assets/images/31.webp",
     alt: "Formal portrait of me in a traditional waistcoat",
     caption: "Five hundred dollars. The first real win.",
   },
@@ -82,7 +82,7 @@ export const chapterSideImages: Record<number, BioImage> = {
     caption: "Histeeria. Still building.",
   },
   16: {
-    src: "/assets/images/31.webp",
+    src: "/assets/images/27.webp",
     alt: "Recent portrait of me. Still mid-build.",
     caption: "Still mid-build.",
   },
