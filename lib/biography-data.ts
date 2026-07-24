@@ -6,7 +6,7 @@ export interface Chapter {
   estimatedReadingTime: number; // in minutes
 }
 
-export const biographyTitle = "The Boy Who Built Things";
+export const biographyTitle = "A Self Reflection";
 export const biographySubtitle = "A Memoir";
 
 export const chapters: Chapter[] = [
@@ -31,7 +31,7 @@ export const chapters: Chapter[] = [
       "It was not a big house.",
       "It was not beautifully furnished.",
       "It was simply a place they could call home.",
-      "Both of them continued working because they had no other choice. Every month was carefully planned. Every expense mattered. They were not building wealth. They were building stability."
+      "Both of them continued working because they had no other choice. Every month was carefully planned. Every expense mattered. They were not building wealth. They were building stability.",
     ]
   },
   {
@@ -63,7 +63,7 @@ export const chapters: Chapter[] = [
       "My mother.",
       "Waiting outside.",
       "Sometimes the sun in Lahore was so strong that she would carry an umbrella. She would lift me into her arms as though I weighed nothing. My school bag would hang behind her shoulder while I rested against her. I never thought about how tired she must have been. She had already spent the whole day teaching. She still had household work waiting for her. She still had responsibilities that I knew nothing about. Yet every afternoon, she smiled as if picking me up from school was the happiest part of her day.",
-      "Children rarely understand the sacrifices of their parents. Neither did I."
+      "Children rarely understand the sacrifices of their parents. Neither did I.",
     ]
   },
   {
@@ -86,35 +86,12 @@ export const chapters: Chapter[] = [
       "I was curious about almost everything. English, mathematics, general knowledge, and science all felt exciting because they answered questions I already had in my mind. Science especially felt different. It was not just a subject. It was a collection of mysteries waiting to be explored.",
       "At that time, I did not realize what was happening, but something important was growing inside me. I was developing curiosity. I was learning to ask why. I was learning to imagine things that did not exist yet.",
       "Looking back, I don't think the biggest achievement of those years was my grades, my A-pluses, or the stars on my notebooks. Those things eventually became memories. The thing that stayed with me was the way I started thinking.",
-      "I became someone who enjoyed creating more than memorizing. Someone who found excitement in turning ideas into reality."
+      "I became someone who enjoyed creating more than memorizing. Someone who found excitement in turning ideas into reality.",
     ]
   },
   {
     id: "chapter-4",
     number: 4,
-    title: "When the World Began to Change",
-    estimatedReadingTime: 2,
-    paragraphs: [
-      "The change did not happen suddenly. It happened slowly, almost without anyone noticing.",
-      "My little sister was born, and my mother's life became much busier. She was already balancing so many things: being a teacher, a wife, managing the home, and now raising two children. The time she once had to sit with me, explain things again, and guide me through every lesson slowly disappeared.",
-      "Nobody was at fault. Life had simply become more demanding.",
-      "At the same time, school was becoming harder for me. The books became thicker, the chapters became longer, and for the first time, I had to figure things out on my own without my mother always being there to explain everything.",
-      "My grades were still good. I was still among the top students in my class, but something inside me was changing. I was slowly losing interest in memorizing pages just for exams. I wanted to understand how things actually worked.",
-      "My notebooks started filling with drawings of machines, designs, and ideas that had nothing to do with school. I would spend hours sketching things that existed only in my imagination. It was not because I was avoiding studies. I simply had this constant need to create something.",
-      "I became the kind of child who could not look at ordinary things normally anymore. A ceiling fan was not just a ceiling fan. A toy car was not just a toy car. I wanted to know what was inside them, how they moved, and what made them work.",
-      "I was never really interested in just having things. I wanted to understand them. I wanted to take them apart and rebuild them in my own way.",
-      "Whenever school gave us projects where we could actually create something, I felt completely different. While exams tested how much I could remember, these activities showed me what I could imagine. Time would disappear when I was building models, drawing designs, or working on something with my hands.",
-      "Sometimes my classmates would gather around my desk just to see what I was making. Those moments felt different from getting good grades. A good result proved that I was a good student, but creating something from my own ideas made me feel like I was capable of something more.",
-      "We were never a family with extra money to spend. We did not have a car, and every purchase had to be thought about carefully. As a child, I did not fully understand our financial situation, but I understood one thing: if my parents said something was not possible, I had to accept it.",
-      "Maybe that is where this habit started.",
-      "If I could not buy something, I would try to create it myself.",
-      "That thought stayed with me. Even years later, whenever I wanted to solve a problem, my first instinct was never to search for someone who had already built the solution.",
-      "It was to build my own."
-    ]
-  },
-  {
-    id: "chapter-5",
-    number: 5,
     title: "My Own Little Laboratory",
     estimatedReadingTime: 3,
     paragraphs: [
@@ -169,56 +146,56 @@ export const chapters: Chapter[] = [
       "They cared about marks.",
       "Percentages.",
       "Ranks.",
-      "And soon, those numbers would begin competing with the things I loved most."
+      "And soon, those numbers would begin competing with the things I loved most.",
     ]
   },
   {
-    id: "chapter-6",
-    number: 6,
+    id: "chapter-5",
+    number: 5,
     title: "The Report Card That Changed Everything",
     estimatedReadingTime: 2,
     paragraphs: [
       "I was in middle school when I got my first C. It was one letter on one piece of paper, and it felt like something in my identity had cracked. Until then, I'd always been the topper, the bright one, the kid whose grades people expected. What almost nobody around me clocked was that I had never actually stopped learning; I'd just stopped learning the things that showed up on a report card.",
       "The same year, in the same breath, I topped my school's English debate competition and won the annual science exhibition outright, with a hydraulic dam I'd built from syringes, tubing, and thermocol that actually worked; gates lifting as water pushed through the tubes, exactly as I'd designed it. Teachers gathered around it. I explained the hydraulics with more excitement than I'd ever shown answering an exam question. I was also, that same year, still the artist everyone came to for drawings, still the kid with the handwriting teachers held onto a little too long.",
-      "I couldn't reconcile it at the time, how I could be failing in one place and winning in every other."
+      "I couldn't reconcile it at the time, how I could be failing in one place and winning in every other.",
     ]
   },
   {
-    id: "chapter-7",
-    number: 7,
+    id: "chapter-6",
+    number: 6,
     title: "The Satellite and the Stereo That Got Smashed",
     estimatedReadingTime: 2,
     paragraphs: [
       "Once, I sketched out a design for a satellite and showed it to my teacher. She was inspired enough to arrange a study tour for me to Arfa Software Technology Park and to SUPARCO, Pakistan's national space and aeronautics center, where I presented that design in person. It's one of the best feelings I've had in my life. I was acknowledged. My parents looked proud. The organization kept the design as a token of appreciation.",
       "A week later, I brought home a bare B on a class test.",
       "My father took the stereo I'd built out of an old broken radio, the one thing in my room that represented everything I'd taught myself, and smashed it. Honestly, it was a lot from what I am explaining, but I don't want to express here how strict my parents became with me because of my B grades. It kinda starting to lose my identity.",
-      "Something in me broke along with it. I took everything I owned, every project, locked it in a drawer, and threw the key away. Then, without telling anyone, I carried my paintings and certificates up to the roof of our house and burned them. There were more than 30 certificates and 40+ paintings that I burned. When my parents realized what I'd done, they apologized. They hugged me. They told me they were proud, that they believed I was a genius. But it was too late. I'd already started ninth grade, and the desire I'd spent years building had gone out of me (it was not because of one incident; it was a result of continuous punishments and talks compounding over years)."
+      "Something in me broke along with it. I took everything I owned, every project, locked it in a drawer, and threw the key away. Then, without telling anyone, I carried my paintings and certificates up to the roof of our house and burned them. There were more than 30 certificates and 40+ paintings that I burned. When my parents realized what I'd done, they apologized. They hugged me. They told me they were proud, that they believed I was a genius. But it was too late. I'd already started ninth grade, and the desire I'd spent years building had gone out of me (it was not because of one incident; it was a result of continuous punishments and talks compounding over years).",
+    ]
+  },
+  {
+    id: "chapter-7",
+    number: 7,
+    title: "A Future Chosen For Me",
+    estimatedReadingTime: 1,
+    paragraphs: [
+      "Then came the time when I had to select my future. Like how pitiful it is that you would be selecting your future in high school? I had to choose between biology, computer science, and arts. I wanted computers; I loved computers. But my parents wanted me to become a doctor. They forced me to pursue biology. I couldn't protest, so I took it. Then I decided not to study, because I hated biology.",
     ]
   },
   {
     id: "chapter-8",
     number: 8,
-    title: "A Future Chosen For Me",
-    estimatedReadingTime: 1,
-    paragraphs: [
-      "Then came the time when I had to select my future. Like how pitiful it is that you would be selecting your future in high school? I had to choose between biology, computer science, and arts. I wanted computers; I loved computers. But my parents wanted me to become a doctor. They forced me to pursue biology. I couldn't protest, so I took it. Then I decided not to study, because I hated biology."
-    ]
-  },
-  {
-    id: "chapter-9",
-    number: 9,
     title: "The Year the World Stopped",
     estimatedReadingTime: 2,
     paragraphs: [
       "And then it arrived. A thing we all know very well. A monster that ruined the world. Schools closed for eight straight months. Online classes on Zoom and Google Meet were, honestly, mostly a waste, but they handed me something I hadn't had in years: unscheduled time.",
       "I found it on an online platform called Noon Academy, under a teacher named Nashwa Ibtisam. I don't think I can overstate what she gave me back. She didn't just teach me the syllabus, she rebuilt the part of my mind that had gone quiet since the stereo and the fire on the roof. She made me a reader, a researcher, someone willing to sit with a hard idea instead of just memorizing an answer to it.",
       "I can never forget her. She was the reason I regained my identity. She didn't teach me my books, she made my mindset.",
-      "In 10th class, I read The Canon of Medicine by Avicenna. Five volumes. I swear to God I didn't understand a thing, but I was in love with the book. I watched every page. Then I started reading every single book I wanted, on biology, on astronomy, on religion. All bought with my own saved pocket money."
+      "In 10th class, I read The Canon of Medicine by Avicenna. Five volumes. I swear to God I didn't understand a thing, but I was in love with the book. I watched every page. Then I started reading every single book I wanted, on biology, on astronomy, on religion. All bought with my own saved pocket money.",
     ]
   },
   {
-    id: "chapter-10",
-    number: 10,
+    id: "chapter-9",
+    number: 9,
     title: "A Private Search for Answers",
     estimatedReadingTime: 3,
     paragraphs: [
@@ -238,45 +215,45 @@ export const chapters: Chapter[] = [
       "Whether someone is Muslim, Christian, Hindu, Buddhist, Jewish, or follows no religion at all, I believe everyone deserves the chance to understand what they believe and why they believe it.",
       "For me, that search became one of the most meaningful journeys of my life. It shaped not only my faith, but also the way I approach every other question: don't assume, don't follow blindly, and never stop looking for the truth.",
       "After religion, I delved deeper into medical sciences. Human anatomy, physiology, psychology. I bought books on medicine and surgery. If you ask me, I can step-by-step tell you how to perform a CABG or a heart transplant. But my enthusiasm didn't earn good marks.",
-      "And then things started to change for us."
+      "And then things started to change for us.",
     ]
   },
   {
-    id: "chapter-11",
-    number: 11,
+    id: "chapter-10",
+    number: 10,
     title: "The Hospital Ward",
     estimatedReadingTime: 2,
     paragraphs: [
       "In my senior years of high school, things got hard in a way that had nothing to do with any of that.",
       "The economy was still reeling from COVID when my father had a heart attack. That year is close to the hardest of my life. Our only bike was stolen. My phone was stolen. My father was in a government hospital where we should have gotten free treatment, and instead, the corrupt doctors quoted us 1.3 million rupees for the surgery, money we did not have and had no way of finding. We spent months in the general ward. Every single day, someone near us didn't make it, and every day we understood a little more clearly that we might be next in that line (easy to write but…)",
-      "We filed a complaint through the government portal, more out of desperation than hope. Somehow, we were heard. A minister visited the hospital, and the surgery was approved. My father survived it, but he lost his job in the process, his health no longer able to carry the work, and for a while my mother's low salary was the only thing holding our household together: rent, food, my siblings' education, everything. And my poor grades were the last thing that spread oil to the fire. We were struck by the worst financial conditions of our lives, and I was the only hope for my family."
+      "We filed a complaint through the government portal, more out of desperation than hope. Somehow, we were heard. A minister visited the hospital, and the surgery was approved. My father survived it, but he lost his job in the process, his health no longer able to carry the work, and for a while my mother's low salary was the only thing holding our household together: rent, food, my siblings' education, everything. And my poor grades were the last thing that spread oil to the fire. We were struck by the worst financial conditions of our lives, and I was the only hope for my family.",
     ]
   },
   {
-    id: "chapter-12",
-    number: 12,
+    id: "chapter-11",
+    number: 11,
     title: "Changing Course",
     estimatedReadingTime: 2,
     paragraphs: [
       "Medicine was not going to get us out of that hole fast enough, and honestly, my results weren't going to get me into medical school anyway. So I made a decision my whole family opposed at the time: I walked away from biology entirely and moved into computer science. My father wanted me to continue medical, if not medicine then any biology related field. But I took the decision, a hard one, but was logical that by getting the skills, i can freelance and can actually earn enough to supplement myself soon.",
       "I started my degree in September 2024 on a used ThinkPad T470p, 16GB of RAM, a 256GB SSD, a seventh-generation Intel i7, and that laptop, an internet connection, and whatever was left of my old stubbornness became the whole operation. I gave myself three months just to get oriented, and then I pushed as hard as I have ever pushed at anything. Frontend, then backend, then databases, around the clock. My eyes went red. My fingertips split from typing so much that the pimples that formed there kept bursting. Keyboard keys physically broke under me. I didn't stop, because stopping wasn't really an option with what my family was carrying.",
-      "I remember, about seven months in, going to the Cardiology hospital to pick up my father's medicine, and sitting afterward in a nearby park because I was too tired to do anything else. And I cried, not from pain, but because I realized I had genuinely forgotten what it felt like to just sit somewhere quiet and be a person for a minute."
+      "I remember, about seven months in, going to the Cardiology hospital to pick up my father's medicine, and sitting afterward in a nearby park because I was too tired to do anything else. And I cried, not from pain, but because I realized I had genuinely forgotten what it felt like to just sit somewhere quiet and be a person for a minute.",
     ]
   },
   {
-    id: "chapter-13",
-    number: 13,
+    id: "chapter-12",
+    number: 12,
     title: "The Five Hundred Dollars",
     estimatedReadingTime: 2,
     paragraphs: [
       "The hard work started paying back faster than I expected. At the end of my 2nd semester, I started Upvista Digital, my own web development agency, and after a slow, uncertain start, my first real client appeared, a man from Japan who paid me $500 for a website.",
       "That $500 is one of the more important numbers in my life. At nineteen, it was more money than my parents' combined salaries ever, while my father was still out of work. It didn't fix everything, but it was the first real sign, after years of debt and crisis, that the ground under us might hold. My whole family cried over that payment. It felt the way rain feels to a farmer who'd nearly given up on the season.",
-      "From there, Upvista grew into a real studio, eventually serving clients across Japan, the US, Germany, New Zealand, Singapore, and Pakistan, a genuinely strange thing to be running as a student in Lahore, but by then I'd stopped being surprised by what stubbornness could produce."
+      "From there, Upvista grew into a real studio, eventually serving clients across Japan, the US, Germany, New Zealand, Singapore, and Pakistan, a genuinely strange thing to be running as a student in Lahore, but by then I'd stopped being surprised by what stubbornness could produce.",
     ]
   },
   {
-    id: "chapter-14",
-    number: 14,
+    id: "chapter-13",
+    number: 13,
     title: "Project Cortex",
     estimatedReadingTime: 2,
     paragraphs: [
@@ -290,39 +267,39 @@ export const chapters: Chapter[] = [
       "Without money, resources, or a network, I couldn't make it a hit. I couldn't even use Stripe or PayPal. In Pakistan, you don't have the same opportunities as you have in SF. I applied to YC. Rejected, no traction, no cofounder. Because there wasn't a single person in my network who knew how to write code.",
       "I launched it several times. It failed again and again.",
       "Not because the satellite was bad. But because the rocket had no fuel, no launchpad, and no ignition. It is as though I am holding that rocket in my hands and throwing it with my full potential, hoping, aiming, and praying that it reaches its desired orbit.",
-      "But obviously, it won't."
+      "But obviously, it won't.",
+    ]
+  },
+  {
+    id: "chapter-14",
+    number: 14,
+    title: "Anya, and the Idea That Wouldn't Let Go",
+    estimatedReadingTime: 2,
+    paragraphs: [
+      "Not every project I've built has been aimed at a market. Anya is different, an autonomous companion robot, named for and inspired by the character from Spy x Family, that exists purely because I wanted her to. I designed her full architecture myself: a thirteen-organ system distributing function the way a body does, a NATS JetStream message bus keeping her parts in constant communication, a Railway backend, a Raspberry Pi 4B as her onboard brain, and a phone standing in as her eyes, ears, and face rather than expensive custom sensors I couldn't afford anyway.",
+      "She's become more than a passion project lately, I'm seriously weighing a robotics-focused YC application built around her, partly because AI-agent-observability has gotten crowded, and partly because the physical world still feels like a frontier nobody's really cracked yet.",
     ]
   },
   {
     id: "chapter-15",
     number: 15,
-    title: "Anya, and the Idea That Wouldn't Let Go",
-    estimatedReadingTime: 2,
-    paragraphs: [
-      "Not every project I've built has been aimed at a market. Anya is different, an autonomous companion robot, named for and inspired by the character from Spy x Family, that exists purely because I wanted her to. I designed her full architecture myself: a thirteen-organ system distributing function the way a body does, a NATS JetStream message bus keeping her parts in constant communication, a Railway backend, a Raspberry Pi 4B as her onboard brain, and a phone standing in as her eyes, ears, and face rather than expensive custom sensors I couldn't afford anyway.",
-      "She's become more than a passion project lately, I'm seriously weighing a robotics-focused YC application built around her, partly because AI-agent-observability has gotten crowded, and partly because the physical world still feels like a frontier nobody's really cracked yet."
-    ]
-  },
-  {
-    id: "chapter-16",
-    number: 16,
     title: "Histeeria, Where the Threads Meet",
     estimatedReadingTime: 2,
     paragraphs: [
       "Histeeria is where most of my current energy lives, an AI agent observability and trust-scoring platform, evaluating agent decisions across eight judgment dimensions with a rule-based pipeline plus the LLM judge plus the adjudicator. I built it and launched it on July 1st, 2026, the largest single piece of software I've shipped, built on the bones of an older project: an end-to-end encrypted, distributed social platform in Go that could hold 25,000 concurrent connections.",
       "The honest state of it right now: real signups, zero paying customers, and a market that mostly isn't yet running the kind of high-stakes autonomous agents that make trust infrastructure feel urgent. So the pitch has evolved from \"AI agent observability\" toward the real category, \"trust infrastructure for AI agents\", framed for investors inside what I've started calling \"loop engineering.\" I've mapped the competition closely: Galileo folded into Splunk, Helicone drifting into maintenance mode, Langfuse acquired by ClickHouse, Braintrust sitting near an $800 million valuation. Bloomhaus VC, a Swiss pre-seed fund, reached out with real interest and ultimately passed, citing their policy against solo founders. It didn't slow me down.",
-      "Underneath all three projects — Cortex, Anya, Histeeria — sits a second research paper I'm writing now, proposing continuous runtime evaluation as a core architecture for trustworthy autonomous agents, tracing my own arc: research the prefrontal cortex, design an architecture from it, build it as Cortex, rebuild it as Anya, synthesize all of it through Histeeria. I want it to stand at a genuinely PhD-level standard, because I intend it to ground whatever comes next."
+      "Underneath all three projects (Cortex, Anya, and Histeeria) sits a second research paper I am writing now, proposing continuous runtime evaluation as a core architecture for trustworthy autonomous agents, tracing my own arc: research the prefrontal cortex, design an architecture from it, build it as Cortex, rebuild it as Anya, synthesize all of it through Histeeria. I want it to stand at a genuinely PhD-level standard, because I intend it to ground whatever comes next.",
     ]
   },
   {
-    id: "chapter-17",
-    number: 17,
+    id: "chapter-16",
+    number: 16,
     title: "Where This Leaves Me",
     estimatedReadingTime: 2,
     paragraphs: [
       "I don't have an ending yet, because I'm still standing in the middle of the story, not looking back at it from the end. What I have is a pattern, visible only in hindsight: a kid who saved lunch money for a soldering iron. A stereo, smashed, and paintings burned on a roof. A biology stream I never wanted later became my passion. A father's heart attack that rewrote everything. The financial condition that shook the family. A $500 payment that felt like rain after a drought. A rejected paper turned into a company, was rejected again, turned into another company, and another. A professor in Okinawa I haven't written to yet.",
       "If there's a single thread running through all of it, it's this: I have never once, in any version of my life, been able to leave a broken thing alone. I take it apart, I understand it, and I build the next version better. That was true of a toy remote-control car when I was eleven, and it's true of a company today. I'm still, in every sense that matters, mid-build, still figuring out which version of myself I'm assembling next.",
-      "This account reflects where things stand as of mid-2026, a story still very much being written, by someone who has never known how to leave a draft unfinished."
+      "This account reflects where things stand as of mid-2026, a story still very much being written, by someone who has never known how to leave a draft unfinished.",
     ]
   }
 ];

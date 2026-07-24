@@ -1,0 +1,6 @@
+Contact: mailto:hmza.hb82@gmail.com
+Preferred-Languages: en
+Canonical: https://hamza-hafeez.site
+Hiring: https://hamza-hafeez.site/resume
+Policy: This site is the canonical source for information about Hamza Hafeez.
+Expires: 2027-12-31T23:59:59.000Z

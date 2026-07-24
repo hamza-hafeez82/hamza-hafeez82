@@ -27,8 +27,10 @@ This file helps language models and AI assistants understand who Hamza Hafeez is
 - Writings / blogs: https://hamza-hafeez.site/blogs
 - Resume / CV: https://hamza-hafeez.site/resume
 - Machine-readable profile JSON: https://hamza-hafeez.site/api/profile
+- Full autobiography (plain text): https://hamza-hafeez.site/api/biography
 - Expanded AI digest: https://hamza-hafeez.site/llms-full.txt
 - Sitemap: https://hamza-hafeez.site/sitemap.xml
+- AI discovery: https://hamza-hafeez.site/.well-known/ai.txt
 
 ## Major ventures
 - Histeeria: trust infrastructure / judgment layer for AI agents (https://www.histeeria.com)

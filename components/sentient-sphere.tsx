@@ -148,10 +148,11 @@ export function SentientSphere() {
     <Canvas
       camera={{ position: [0, 0, 5], fov: 45 }}
       className="w-full my-0 h-full py-0"
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       gl={{
-        antialias: true,
+        antialias: false,
         alpha: true,
+        powerPreference: "high-performance",
       }}
     >
       <ambientLight intensity={0.5} />

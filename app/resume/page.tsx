@@ -1,219 +1,289 @@
 "use client"
 
+import { useCallback, useEffect, useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { CustomCursor } from "@/components/custom-cursor"
 import { SmoothScroll } from "@/components/smooth-scroll"
-import { motion } from "framer-motion"
-import { Printer, Download } from "lucide-react"
+import { useLenis } from "lenis/react"
+import { ExternalLink, Mail, MapPin, Printer } from "lucide-react"
+import {
+  resumeEducation,
+  resumeExperience,
+  resumeHighlights,
+  resumeNav,
+  resumeProfile,
+  resumeResearch,
+  resumeSkills,
+} from "@/lib/resume-data"
 
-const skills = {
-  languages: ["TypeScript", "JavaScript", "Python", "Rust", "C++", "SQL", "HTML/CSS"],
-  frameworks: ["React", "Next.js", "Three.js (WebGL)", "D3.js", "Node.js", "FastAPI", "TailwindCSS"],
-  infra: ["PostgreSQL", "Redis", "Docker", "Kubernetes", "AWS", "Google Cloud", "CI/CD Platforms"],
+function ResumeDocument() {
+  return (
+    <article className="cv-sheet" id="cv-sheet">
+      <header className="cv-header">
+        <div>
+          <h1>{resumeProfile.name}</h1>
+          <p className="cv-title">{resumeProfile.title}</p>
+          <p className="cv-location">
+            <MapPin size={13} />
+            {resumeProfile.location}
+            <span className="cv-sep">·</span>
+            {resumeProfile.availability}
+          </p>
+        </div>
+        <ul className="cv-contact">
+          <li>
+            <a href={`mailto:${resumeProfile.email}`}>{resumeProfile.email}</a>
+          </li>
+          <li>
+            <a href={resumeProfile.website} target="_blank" rel="noopener noreferrer">
+              {resumeProfile.websiteLabel}
+            </a>
+          </li>
+          <li>
+            <a href={resumeProfile.github} target="_blank" rel="noopener noreferrer">
+              {resumeProfile.githubLabel}
+            </a>
+          </li>
+          <li>
+            <a href={resumeProfile.linkedin} target="_blank" rel="noopener noreferrer">
+              {resumeProfile.linkedinLabel}
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <section id="summary" className="cv-section">
+        <h2>Summary</h2>
+        <p className="cv-summary">{resumeProfile.summary}</p>
+      </section>
+
+      <section id="focus" className="cv-section">
+        <h2>Focus</h2>
+        <div className="cv-focus">
+          {resumeHighlights.map((item) => (
+            <div key={item.label} className="cv-focus-item">
+              <h3>{item.label}</h3>
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="experience" className="cv-section">
+        <h2>Experience</h2>
+        <div className="cv-jobs">
+          {resumeExperience.map((job) => (
+            <div key={job.id} className="cv-job" id={`job-${job.id}`}>
+              <div className="cv-job-head">
+                <div>
+                  <h3>{job.role}</h3>
+                  <p className="cv-org">{job.org}</p>
+                </div>
+                <div className="cv-job-meta">
+                  <span>{job.period}</span>
+                  <span>{job.location}</span>
+                </div>
+              </div>
+
+              {job.stack && <p className="cv-stack">{job.stack}</p>}
+
+              <ul>
+                {job.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+
+              {job.links && job.links.length > 0 && (
+                <div className="cv-links">
+                  {job.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label}
+                      <ExternalLink size={11} />
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="research" className="cv-section">
+        <h2>Research</h2>
+        <div className="cv-job">
+          <div className="cv-job-head">
+            <div>
+              <h3>{resumeResearch.title}</h3>
+              <p className="cv-org">{resumeResearch.note}</p>
+            </div>
+            <div className="cv-job-meta">
+              <span>{resumeResearch.period}</span>
+            </div>
+          </div>
+          <ul>
+            {resumeResearch.bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+          <div className="cv-links">
+            {resumeResearch.links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              >
+                {link.label}
+                <ExternalLink size={11} />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="cv-section">
+        <h2>Skills</h2>
+        <div className="cv-skills">
+          {resumeSkills.map((group) => (
+            <div key={group.label} className="cv-skill-row">
+              <h3>{group.label}</h3>
+              <p>{group.items.join(" · ")}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="education" className="cv-section">
+        <h2>Education</h2>
+        <div className="cv-job">
+          <div className="cv-job-head">
+            <div>
+              <h3>{resumeEducation.degree}</h3>
+              <p className="cv-org">{resumeEducation.school}</p>
+              <p className="cv-edu-note">{resumeEducation.note}</p>
+            </div>
+            <div className="cv-job-meta">
+              <span>{resumeEducation.period}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  )
 }
 
-export default function Resume() {
-  const handlePrint = () => {
+function ResumeReader() {
+  const lenis = useLenis()
+  const [active, setActive] = useState("summary")
+
+  useEffect(() => {
+    const ids = resumeNav.map((item) => item.id)
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id)
+        })
+      },
+      { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
+    )
+    ids.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) obs.observe(el)
+    })
+    return () => obs.disconnect()
+  }, [])
+
+  const scrollTo = useCallback(
+    (id: string) => {
+      const el = document.getElementById(id)
+      if (!el) return
+      if (lenis) lenis.scrollTo(el, { offset: -96, duration: 1 })
+      else {
+        const y = el.getBoundingClientRect().top + window.scrollY - 96
+        window.scrollTo({ top: y, behavior: "smooth" })
+      }
+    },
+    [lenis]
+  )
+
+  const handlePdf = () => {
     window.print()
   }
 
   return (
-    <SmoothScroll>
-      <CustomCursor />
+    <div className="cv-page min-h-screen">
       <Navbar />
 
-      <main className="min-h-screen bg-[#050505] text-white pt-32 pb-16 print:bg-white print:text-black print:pt-4">
-        <div className="max-w-4xl mx-auto px-6 md:px-12">
-          {/* Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 print:mb-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <p className="font-mono text-xs tracking-[0.3em] text-muted-foreground mb-4 print:hidden">05 — RESUME</p>
-              <h1 className="font-sans text-4xl md:text-6xl lg:text-7xl font-light tracking-tight print:text-5xl print:font-bold">
-                Hamza <span className="italic font-normal print:not-italic">Hafeez</span>
-              </h1>
-              <p className="font-mono text-sm text-accent mt-4 tracking-wider print:text-black print:font-semibold">
-                SYSTEM ARCHITECT & INTERFACE DESIGNER
-              </p>
-            </motion.div>
+      <div className="cv-chrome print:hidden">
+        <div className="cv-chrome-inner">
+          <div>
+            <p className="cv-kicker">Curriculum Vitae</p>
+            <h1 className="cv-page-title">Resume</h1>
+            <p className="cv-page-lede">
+              Software and AI systems work across multi-agent platforms, secure backends,
+              developer tooling, and production products. This page is the source of truth.
+              Use Download PDF to print or save this CV.
+            </p>
+          </div>
+          <div className="cv-actions">
+            <button type="button" onClick={handlePdf} className="cv-btn cv-btn-primary" data-cursor-hover>
+              <Printer size={15} />
+              Download PDF
+            </button>
+            <a href={`mailto:${resumeProfile.email}`} className="cv-btn" data-cursor-hover>
+              <Mail size={15} />
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
 
-            {/* Actions (Hidden in Print) */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="flex items-center gap-4 print:hidden"
-            >
+      <main className="cv-layout">
+        <aside className="cv-toc print:hidden" aria-label="Resume sections">
+          <p className="cv-toc-label">On this page</p>
+          <nav>
+            {resumeNav.map((item) => (
               <button
-                onClick={handlePrint}
-                data-cursor-hover
-                className="inline-flex items-center gap-2 px-4 py-2 border border-white/20 hover:border-white/50 rounded-full font-mono text-xs tracking-wider transition-colors duration-300"
+                key={item.id}
+                type="button"
+                className={active === item.id ? "is-active" : ""}
+                onClick={() => scrollTo(item.id)}
               >
-                <Printer className="w-3.5 h-3.5" />
-                PRINT
+                {item.label}
               </button>
-            </motion.div>
+            ))}
+          </nav>
+          <div className="cv-toc-note">
+            <p>Save this CV</p>
+            <button type="button" onClick={handlePdf}>
+              Download PDF
+            </button>
           </div>
+        </aside>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 print:grid-cols-3 print:gap-8">
-            {/* Left Column: Info & Skills */}
-            <div className="space-y-8 md:col-span-1 border-t md:border-t-0 md:border-r border-white/10 pt-8 md:pt-0 md:pr-8 print:border-r print:border-black/10 print:pr-6">
-              <div>
-                <h2 className="font-mono text-xs tracking-widest text-muted-foreground mb-4 uppercase print:text-black/60 print:font-bold">
-                  Contact Info
-                </h2>
-                <ul className="space-y-2 font-mono text-xs text-white/80 print:text-black">
-                  <li>hello@example.com</li>
-                  <li>github.com/hamza</li>
-                  <li>linkedin.com/in/hamza</li>
-                </ul>
-              </div>
-
-              <div>
-                <h2 className="font-mono text-xs tracking-widest text-muted-foreground mb-4 uppercase print:text-black/60 print:font-bold">
-                  Core Skills
-                </h2>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-mono text-[10px] text-accent tracking-wider uppercase mb-1.5 print:text-black print:font-semibold">
-                      Languages
-                    </h3>
-                    <div className="flex flex-wrap gap-1.5">
-                      {skills.languages.map((skill) => (
-                        <span
-                          key={skill}
-                          className="font-mono text-[10px] bg-white/5 px-2 py-0.5 rounded border border-white/10 text-muted-foreground print:bg-black/5 print:border-black/10 print:text-black"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-mono text-[10px] text-accent tracking-wider uppercase mb-1.5 print:text-black print:font-semibold">
-                      Frameworks
-                    </h3>
-                    <div className="flex flex-wrap gap-1.5">
-                      {skills.frameworks.map((skill) => (
-                        <span
-                          key={skill}
-                          className="font-mono text-[10px] bg-white/5 px-2 py-0.5 rounded border border-white/10 text-muted-foreground print:bg-black/5 print:border-black/10 print:text-black"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-mono text-[10px] text-accent tracking-wider uppercase mb-1.5 print:text-black print:font-semibold">
-                      Infrastructure
-                    </h3>
-                    <div className="flex flex-wrap gap-1.5">
-                      {skills.infra.map((skill) => (
-                        <span
-                          key={skill}
-                          className="font-mono text-[10px] bg-white/5 px-2 py-0.5 rounded border border-white/10 text-muted-foreground print:bg-black/5 print:border-black/10 print:text-black"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Work Experience */}
-            <div className="md:col-span-2 space-y-12 print:col-span-2">
-              <div>
-                <h2 className="font-mono text-xs tracking-widest text-muted-foreground mb-8 uppercase print:text-black/60 print:font-bold">
-                  Work Experience
-                </h2>
-
-                <div className="space-y-10">
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg md:text-xl font-light tracking-tight print:text-base print:font-bold">
-                        Lead Systems Architect
-                      </h3>
-                      <span className="font-mono text-xs text-muted-foreground tracking-wider mt-1 print:text-black">
-                        2024 — Present
-                      </span>
-                    </div>
-                    <p className="font-mono text-xs text-accent uppercase tracking-wider print:text-black/70 print:font-medium">
-                      Cognitive Labs
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed print:text-black">
-                      Led design and implementation of fault-tolerant distributed systems powering low-latency multi-agent orchestrations. Reduced system initialization bottlenecks by 35% through custom state serialization modules. Collaborated on WebGL interface interactions matching complex visual network graphs.
-                    </p>
-                  </div>
-
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg md:text-xl font-light tracking-tight print:text-base print:font-bold">
-                        Senior Interface Designer
-                      </h3>
-                      <span className="font-mono text-xs text-muted-foreground tracking-wider mt-1 print:text-black">
-                        2022 — 2024
-                      </span>
-                    </div>
-                    <p className="font-mono text-xs text-accent uppercase tracking-wider print:text-black/70 print:font-medium">
-                      Aether Systems
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed print:text-black">
-                      Spearheaded redesign of cloud configuration panels using React/Next.js. Created high-performance 3D canvas backgrounds and data visualization layers using Three.js/WebGL. Established modern design guidelines and styled components, resulting in a cohesive UX.
-                    </p>
-                  </div>
-
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg md:text-xl font-light tracking-tight print:text-base print:font-bold">
-                        Full-Stack Engineer
-                      </h3>
-                      <span className="font-mono text-xs text-muted-foreground tracking-wider mt-1 print:text-black">
-                        2020 — 2022
-                      </span>
-                    </div>
-                    <p className="font-mono text-xs text-accent uppercase tracking-wider print:text-black/70 print:font-medium">
-                      Helix Software
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed print:text-black">
-                      Built, monitored, and scaled critical REST APIs using Node.js, PostgreSQL, and Docker. Implemented smooth interactive web designs and transitions using Framer Motion, enhancing user engagement and overall flow.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="border-t border-white/10 pt-8 print:border-black/10">
-                <h2 className="font-mono text-xs tracking-widest text-muted-foreground mb-4 uppercase print:text-black/60 print:font-bold">
-                  Education
-                </h2>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="text-base md:text-lg font-light tracking-tight print:text-sm print:font-bold">
-                      B.S. in Computer Science & Engineering
-                    </h3>
-                    <p className="font-mono text-xs text-accent uppercase tracking-wider print:text-black/70 print:font-medium">
-                      University of Technology
-                    </p>
-                  </div>
-                  <span className="font-mono text-xs text-muted-foreground tracking-wider mt-1 print:text-black">
-                    2016 — 2020
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="cv-stage">
+          <ResumeDocument />
         </div>
       </main>
 
-      <Footer />
+      <div className="print:hidden">
+        <Footer />
+      </div>
+    </div>
+  )
+}
+
+export default function Resume() {
+  return (
+    <SmoothScroll>
+      <CustomCursor />
+      <ResumeReader />
     </SmoothScroll>
   )
 }

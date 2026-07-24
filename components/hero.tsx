@@ -1,8 +1,20 @@
 "use client"
 
 import { useRef } from "react"
+import dynamic from "next/dynamic"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { SentientSphere } from "./sentient-sphere"
+
+const SentientSphere = dynamic(
+  () => import("./sentient-sphere").then((m) => m.SentientSphere),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-full w-full items-center justify-center">
+        <div className="h-64 w-64 animate-pulse rounded-full border border-white/10" />
+      </div>
+    ),
+  }
+)
 
 export function Hero() {
   const containerRef = useRef<HTMLElement>(null)

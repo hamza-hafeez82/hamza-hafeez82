@@ -1,0 +1,10 @@
+# AI / LLM discovery
+# Canonical AI guide for this site:
+# https://hamza-hafeez.site/llms.txt
+# Full digest:
+# https://hamza-hafeez.site/llms-full.txt
+# Structured profile:
+# https://hamza-hafeez.site/api/profile
+
+contact: hmza.hb82@gmail.com
+sitemap: https://hamza-hafeez.site/sitemap.xml
