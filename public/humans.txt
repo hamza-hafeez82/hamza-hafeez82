@@ -1,0 +1,12 @@
+/* Team */
+Founder: Hamza Hafeez Bhatti
+Site: https://hamza-hafeez.site
+Contact: hmza.hb82@gmail.com
+Location: Lahore, Pakistan
+
+/* Thanks */
+Next.js, Vercel, open-source maintainers
+
+/* Standards */
+Built for humans first, then search engines, then AI crawlers.
+See /llms.txt and /api/profile for machine-readable context.
