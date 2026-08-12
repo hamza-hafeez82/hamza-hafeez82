@@ -2,9 +2,6 @@
 
 Building high concurrency, distributed backend services, autonomous agent infrastructure & security systems.
 
-[website](https://hamza-hafeez.site) · [linkedin](https://linkedin.com/in/hmza-hb) · [email](mailto:hmza.hb82@gmail.com)
-
----
 
 ### top shippings
 - **[Histeeria](https://github.com/histeeria)**: Engineered asynchronous Go-based ingestion and SDKs to monitor and evaluate production agentic decisions. 
@@ -30,6 +27,3 @@ Building high concurrency, distributed backend services, autonomous agent infras
 </div>
 
 <br/>
-
-
-
