@@ -4,9 +4,6 @@
   <a href="https://github.com/hmza-hb?tab=repositories&sort=stargazers">
     <img src="https://img.shields.io/github/stars/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Stars" alt="Stars" />
   </a>
-  <a href="https://github.com/search?q=author%3Ahmza-hb+type%3Apr">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%253Apr%2Bauthor%253Ahmza-hb&query=%24.total_count&label=PRs&style=for-the-badge&color=2563eb&logo=github&logoColor=white" alt="PRs" />
-  </a>
  
 </div>
 
