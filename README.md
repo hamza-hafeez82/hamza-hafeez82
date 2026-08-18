@@ -22,8 +22,22 @@ Building high concurrency, distributed backend services, autonomous agent infras
 
 - **[Apache Superset PR #4216](https://github.com/superset-sh/superset/pull/4216)**: feat(security): Implement AES-256-GCM Secret Encryption & Fix Chat IDOR
 
+<div align="center">
+  <a href="https://github.com/hmza-hb?tab=repositories&sort=stargazers">
+    <img src="https://img.shields.io/github/stars/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Stars" alt="Stars" />
+  </a>
+  <a href="https://github.com/search?q=author%3Ahmza-hb+type%3Apr">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%253Apr%2Bauthor%253Ahmza-hb&query=%24.total_count&label=PRs&style=for-the-badge&color=2563eb&logo=github&logoColor=white" alt="PRs" />
+  </a>
+  <a href="https://github.com/search?q=author%3Ahmza-hb+type%3Acommits">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Dauthor%253Ahmza-hb&query=%24.total_count&label=Commits&style=for-the-badge&color=2563eb&logo=github&logoColor=white" alt="Commits" />
+  </a>
+  <a href="https://github.com/hmza-hb?tab=followers">
+    <img src="https://img.shields.io/github/followers/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Followers" alt="Followers" />
+  </a>
+</div>
 
-
+<br/>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=hmza-hb&theme=dark&hide_border=true&background=0d1117&ring=2563eb&fire=2563eb&currStreakLabel=2563eb" alt="GitHub streak" height="140" />
