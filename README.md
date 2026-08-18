@@ -16,7 +16,10 @@ Building high concurrency, distributed backend services, autonomous agent infras
 - **[Project Cortex](https://github.com/hmza-hb/Project-Cortex)**: Prefrontal-cortex inspired AI architecture. Authored a 36-page research paper reviewed by 57 researchers.
 
 ### Open-Source footprint
+- **[Supabase PR #49181](https://github.com/supabase/supabase/pull/49181)**: fix(design-system): enable registry type-checking and add layout error boundary
+
 - **[InsForge (YC P24) PR #1214](https://github.com/InsForge/InsForge/pull/1214)**: security(auth): harden auth posture (fix open-redirect & info-leak)
+
 - **[Apache Superset PR #4216](https://github.com/superset-sh/superset/pull/4216)**: feat(security): Implement AES-256-GCM Secret Encryption & Fix Chat IDOR
 
 
