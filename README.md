@@ -1,5 +1,15 @@
 # Hamza Hafeez
 
+<div>
+  <a href="https://github.com/hmza-hb?tab=repositories&sort=stargazers">
+    <img src="https://img.shields.io/github/stars/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Stars" alt="Stars" />
+  </a>
+  <a href="https://github.com/search?q=author%3Ahmza-hb+type%3Apr">
+    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%253Apr%2Bauthor%253Ahmza-hb&query=%24.total_count&label=PRs&style=for-the-badge&color=2563eb&logo=github&logoColor=white" alt="PRs" />
+  </a>
+ 
+</div>
+
 Building high concurrency, distributed backend services, autonomous agent infrastructure & security systems.
 
 
@@ -26,14 +36,4 @@ Building high concurrency, distributed backend services, autonomous agent infras
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=hmza-hb&theme=dark&hide_border=true&background=0d1117&ring=2563eb&fire=2563eb&currStreakLabel=2563eb" alt="GitHub streak" height="140" />
 </div>
 
-<div align="center">
-  <a href="https://github.com/hmza-hb?tab=repositories&sort=stargazers">
-    <img src="https://img.shields.io/github/stars/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Stars" alt="Stars" />
-  </a>
-  <a href="https://github.com/search?q=author%3Ahmza-hb+type%3Apr">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dis%253Apr%2Bauthor%253Ahmza-hb&query=%24.total_count&label=PRs&style=for-the-badge&color=2563eb&logo=github&logoColor=white" alt="PRs" />
-  </a>
-  <a href="https://github.com/hmza-hb?tab=followers">
-    <img src="https://img.shields.io/github/followers/hmza-hb?style=for-the-badge&logo=github&color=2563eb&logoColor=white&label=Followers" alt="Followers" />
-  </a>
-</div>
+
