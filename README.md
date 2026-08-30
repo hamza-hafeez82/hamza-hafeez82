@@ -11,7 +11,7 @@ Building high concurrency, distributed backend services, autonomous agent infras
 
 
 ### top shippings
-- **[Histeeria](https://github.com/hmza-hb/histeeria-web)**: Engineered asynchronous Go-based ingestion and SDKs to monitor and evaluate production agentic decisions. 
+- **[Histeeria](https://github.com/hmza-hb/histeeria-web)**: Engineered asynchronous Go-based ingestion and SDKs to monitor and evaluate production agentic decisions. [view github](https://github.com/histeeria) 
 
 - **[Cortex](https://github.com/hmza-hb/cortex-edr)**: Multi-agent appsec platform. combining AI agents and static analysis to automate ~70% of manual security audits. 
 
